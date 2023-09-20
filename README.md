@@ -1,6 +1,6 @@
 <h1>Transparent PNG Image Cropper</h1>
 
-- This Python script utilizes the Python Image Library (PIL) to process a PNG image, with a transparent background, to create a bounding box around the pixel area that has non-transparent pixels and then crop the excess transparent border of the image.
+- This Python script utilizes the PIL fork, Pillow, to process a PNG image, with a transparent background, to create a bounding box around the pixel area that has non-transparent pixels and then crop the excess transparent border of the image.
 
 
 <h2>Use Case</h2>
@@ -38,6 +38,6 @@ Tested on...
  
 <h3>High Resolution Images</h3>
 
-- PIL has a maximum image size value that can constrain the function of this script and will warn of a potential decompression bomb when an image exceeds the default max value.
+- Pillow has a maximum image size value that can constrain the function of this script and will warn of a potential decompression bomb when an image exceeds the default max value.
 - This can happen frequently when dealing with high resolution print images.
 - The script changes the value to none so that images of any size can be processed.
